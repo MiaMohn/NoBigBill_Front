@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Code Pro", monospace;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url("assets/media/images/background.jpg");
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-container {
+    padding: 150px 100px 0 100px;
+}
+
+.darkpurple_bg {
+    background-color: #3d348b;
+}
+
+.purple_bg {
+    background-color: #5050C8;
+}
+
+.lightpurple_bg {
+    background-color: #7678ed;
+}
+
+.black_bg {
+    background-color: black;
+}

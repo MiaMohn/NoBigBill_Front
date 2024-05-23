@@ -1,0 +1,87 @@
+.custom-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-height: 100vh;
+  background-color: #f7f7ed;
+  border: 3px solid black;
+  border-radius: 50px;
+  position: relative;
+  margin-right: 20px;
+  box-shadow: 20px 20px 0px 0px rgba(118, 120, 237, 0.2);
+  margin-bottom: 20px;
+}
+
+.header-bar {
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 25px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.header-bar .circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 12px 50px;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.data-container {
+  padding: 50px 0 80px 0;
+  justify-content: center;
+}
+
+button {
+  font-size: medium;
+  font-weight: bold;
+  padding: 8px;
+  width: 150px;
+  border: 3px solid black;
+  border-radius: 8px;
+  background-color: #f7f7ed;
+  cursor: pointer;
+
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+}
+
+.btn-user:hover {
+  background-color: #f18701;
+  color: #f7f7ed;
+}
+
+.btn-user:focus {
+  background-color: #f18701;
+  color: #f7f7ed;
+}
+
+.btn-expense:hover {
+  background-color: #7678ed;
+  color: #f7f7ed;
+}
+
+.btn-expense:focus {
+  background-color: #7678ed;
+  color: #f7f7ed;
+}
+
+.btn-balance:hover {
+  background-color: #f7b801;
+  color: #f7f7ed;
+}
+
+.btn-balance:focus {
+  background-color: #f7b801;
+  color: #f7f7ed;
+}

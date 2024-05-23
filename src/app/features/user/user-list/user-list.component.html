@@ -1,0 +1,15 @@
+<div class="user-list">
+  <app-add-user (userAdded)="onUserAdded()"></app-add-user>
+
+  <table>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+        <td>
+          <button>Edit</button>
+          <app-delete-user [userId]="user.id" (userDeleted)="onUserDeleted()"></app-delete-user>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

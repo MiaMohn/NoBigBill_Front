@@ -1,0 +1,27 @@
+<div class="main-container">
+  <div class="custom-container">
+    <div class="header-bar">
+      <span class="circle black_bg"></span>
+      <span class="circle black_bg"></span>
+      <span class="circle black_bg"></span>
+      <span class="circle black_bg"></span>
+      <span class="circle black_bg"></span>
+      <span class="circle black_bg"></span>
+      <span class="circle black_bg"></span>
+      <span class="circle black_bg"></span>
+      <span class="circle black_bg"></span>
+    </div>
+
+    <div class="main-container">
+      <div class="menu">
+        <button class="btn-user" routerLink="/user">User</button>
+        <button class="btn-expense" routerLink="/expense">Expense</button>
+        <button class="btn-balance" routerLink="/balance">Balance</button>
+      </div>
+
+      <div class="data-container">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

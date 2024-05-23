@@ -54,13 +54,17 @@
           "defaultConfiguration": "production"
         },
         "serve": {
+          "options": {
+            "proxyConfig": "src/proxy.conf.json"
+          },
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
               "buildTarget": "sharedExpenses_angular:build:production"
             },
             "development": {
-              "buildTarget": "sharedExpenses_angular:build:development"
+              "buildTarget": "sharedExpenses_angular:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

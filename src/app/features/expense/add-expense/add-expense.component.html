@@ -1,0 +1,29 @@
+<div class="add-expense-form">
+  <input
+    type="text"
+    [(ngModel)]="description"
+    placeholder="Description"
+    name="description"
+  />
+  <div class="amount-user">
+    <div class="amount">
+      <input
+        type="number"
+        [(ngModel)]="amount"
+        placeholder="Amount"
+        name="amount"
+      />
+      <span>€</span>
+    </div>
+
+    <select [(ngModel)]="userId" name="userId">
+      <option [ngValue]="null" disabled selected>User</option>
+      <option *ngFor="let user of users" [ngValue]="user.id">
+        {{ user.name }}
+      </option>
+    </select>
+  </div>
+  <div class="button-container">
+    <button (click)="addExpense()">Add</button>
+  </div>
+</div>
