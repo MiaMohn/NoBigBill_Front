@@ -4,15 +4,24 @@
   <table>
     <tbody>
       <tr *ngFor="let expense of expenses">
-        <td>{{ expense.description }}</td>
-        <td>{{ expense.amount }}</td>
-        <td>{{ expense.userName }}</td>
-        <td>{{ expense.expenseDate }}</td>
+        <div class="item">
+          <div class="line">
+            <td>{{ expense.description }}</td>
+            <td>{{ expense.amount }}<span> €</span></td>
+          </div>
+          <div class="line">
+            <td><span>By: </span> {{ expense.userName }}</td>
+            <td>{{ expense.expenseDate }}</td>
+          </div>
+        </div>
+
         <td class="btn-handle-expense">
           <app-update-expense></app-update-expense>
-          <app-delete-expense class="btn"
-          [expenseId]="expense.id"
-          (expenseDeleted)="onExpenseDeleted()"></app-delete-expense>
+          <app-delete-expense
+            class="btn"
+            [expenseId]="expense.id"
+            (expenseDeleted)="onExpenseDeleted()"
+          ></app-delete-expense>
         </td>
       </tr>
     </tbody>

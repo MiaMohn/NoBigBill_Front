@@ -1,0 +1,35 @@
+.expense-list,
+.expense-list table {
+  width: 100%;
+}
+
+.expense-list table {
+    border-spacing: 0;
+}
+
+.item {
+    border-bottom: 3px solid black;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+tr {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.btn-handle-expense {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+td>span{
+    font-weight: bold;
+}
