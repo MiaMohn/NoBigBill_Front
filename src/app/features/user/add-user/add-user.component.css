@@ -1,11 +1,11 @@
 .add-user-form {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   gap: 20px;
 }
 
 .add-user-form input {
-  background-color: #f7f7ee;
+  background-color: #f7f7ed;
   border: 3px solid black;
   border-radius: 8px;
   padding: 10px;
@@ -24,7 +24,7 @@
   width: 100px;
   border: 3px solid black;
   border-radius: 8px;
-  background-color: #f7f7ee;
+  background-color: #f7f7ed;
   cursor: pointer;
 
   transition-property: color, background-color;
@@ -33,5 +33,5 @@
 
 .add-user-form button:hover {
   background-color: #303f9f;
-  color: #f7f7ee;
+  color: #f7f7ed;
 }

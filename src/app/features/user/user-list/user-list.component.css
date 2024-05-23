@@ -1,0 +1,27 @@
+.user-list,
+.user-list table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.userName-list {
+  width: 50%;
+  border-bottom: 3px solid black;
+  justify-content: left;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.btn-handle-user {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+}

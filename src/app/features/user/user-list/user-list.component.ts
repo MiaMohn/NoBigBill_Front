@@ -6,11 +6,12 @@ import { UserService } from '../../../services/user/user.service';
 import { AddUserComponent } from '../add-user/add-user.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DeleteUserComponent } from '../delete-user/delete-user.component';
+import { UpdateUserComponent } from '../update-user/update-user.component';
 
 @Component({
   selector: 'app-user-list',
   standalone: true,
-  imports: [CommonModule, HttpClientModule, AddUserComponent, DeleteUserComponent],
+  imports: [CommonModule, HttpClientModule, AddUserComponent, DeleteUserComponent, UpdateUserComponent],
   templateUrl: './user-list.component.html',
   styleUrl: './user-list.component.css',
 })

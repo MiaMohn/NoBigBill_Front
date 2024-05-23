@@ -4,11 +4,17 @@
   <table>
     <tbody>
       <tr *ngFor="let user of users">
-        <td>{{ user.name }}</td>
-        <td>
-          <button>Edit</button>
-          <app-delete-user [userId]="user.id" (userDeleted)="onUserDeleted()"></app-delete-user>
-        </td>
+        <div class="item">
+          <td class="userName-list">{{ user.name }}</td>
+          <td class="btn-handle-user">
+            <app-update-user></app-update-user>
+            <app-delete-user
+              class="btn"
+              [userId]="user.id"
+              (userDeleted)="onUserDeleted()"
+            ></app-delete-user>
+          </td>
+        </div>
       </tr>
     </tbody>
   </table>
