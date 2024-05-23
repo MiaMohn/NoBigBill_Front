@@ -4,10 +4,9 @@ import { Observable } from 'rxjs';
 import { User } from '../../models/user.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UserService {
-  
   private userApiUrl = '/api/user';
 
   constructor(private http: HttpClient) {}
@@ -32,6 +31,8 @@ export class UserService {
   }
 
   deleteUser(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.userApiUrl}/${id}`, { responseType: 'text' as 'json' });
+    return this.http.delete<void>(`${this.userApiUrl}/${id}`, {
+      responseType: 'text' as 'json',
+    });
   }
 }

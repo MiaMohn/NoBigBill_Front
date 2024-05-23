@@ -53,4 +53,14 @@ export class ExpenseListComponent implements OnInit {
   getUserById(userId: number): User | undefined {
     return this.users.find((user) => user.id === userId);
   }
+
+  onExpenseDeleted(): void {
+    this.loadExpenses();
+  }
+
+  onUserDeleted(): void {
+    this.loadUsers();
+    this.loadExpenses();
+  }
+
 }

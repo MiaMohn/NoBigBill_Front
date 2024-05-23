@@ -38,8 +38,9 @@ export class ExpenseService {
     return this.http.put(url, expense);
   }
 
-  deleteExpense(id: number): Observable<any> {
-    const url = `${this.expenseApiUrl}/${id}`;
-    return this.http.delete(url);
+  deleteExpense(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.expenseApiUrl}/${id}`, {
+      responseType: 'text' as 'json',
+    });
   }
 }

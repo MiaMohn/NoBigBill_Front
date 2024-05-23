@@ -10,7 +10,9 @@
         <td>{{ expense.expenseDate }}</td>
         <td class="btn-handle-expense">
           <app-update-expense></app-update-expense>
-          <app-delete-expense></app-delete-expense>
+          <app-delete-expense class="btn"
+          [expenseId]="expense.id"
+          (expenseDeleted)="onExpenseDeleted()"></app-delete-expense>
         </td>
       </tr>
     </tbody>

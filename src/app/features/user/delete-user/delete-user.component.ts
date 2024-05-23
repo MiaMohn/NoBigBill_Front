@@ -9,26 +9,17 @@ import { HttpClientModule } from '@angular/common/http';
   standalone: true,
   imports: [CommonModule, RouterModule, HttpClientModule],
   templateUrl: './delete-user.component.html',
-  styleUrl: './delete-user.component.css'
+  styleUrl: './delete-user.component.css',
 })
 export class DeleteUserComponent {
-
   @Input() userId!: number;
   @Output() userDeleted = new EventEmitter<void>();
 
   constructor(private userService: UserService) {}
-  
+
   deleteUser(): void {
     this.userService.deleteUser(this.userId).subscribe(() => {
       this.userDeleted.emit();
-      
     });
   }
-
-  /*deleteUser(id: number): void {
-    this.userService.deleteUser(id)
-      .subscribe(() => {
-        this.users = this.users.filter(user => user.id !== id);
-      });
-  } */
 }
