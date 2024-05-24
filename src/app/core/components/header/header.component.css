@@ -2,7 +2,7 @@ header {
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: #7678ed;
+    background-color: var(--light-purple);
     position: fixed;
     width: 100%;
     overflow: hidden;

@@ -6,7 +6,7 @@
 
 .add-expense-form input,
 .add-expense-form select {
-  background-color: #f7f7ee;
+  background-color: var(--off-white);
   margin: 10px 0;
   padding: 10px;
   font-size: 1rem;
@@ -55,7 +55,7 @@
   width: 150px;
   border: 3px solid black;
   border-radius: 8px;
-  background-color: #f7f7ee;
+  background-color: var(--off-white);
   cursor: pointer;
 
   transition-property: color, background-color;
@@ -63,6 +63,6 @@
 }
 
 .add-expense-form button:hover {
-  background-color: #303f9f;
-  color: #f7f7ee;
+  background-color: var(--dark-purple);
+  color: var(--off-white);
 }

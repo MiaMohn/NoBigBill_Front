@@ -5,13 +5,13 @@
   width: 100px;
   border: 3px solid black;
   border-radius: 8px;
-  background-color: #f7f7ed;
+  background-color: var(--off-white);
   cursor: pointer;
   transition-property: color, background-color;
   transition-duration: 0.2s;
 }
 
 .delete-btn:hover {
-  background-color: #f32104;
-  color: #f7f7ed;
+  background-color: var(--red);
+  color: var(--off-white);
 }

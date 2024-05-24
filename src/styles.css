@@ -1,35 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --off-white: #f7f7ed;
+    --purple: #5050c8;
+    --dark-purple: #3d348b;
+    --light-purple: #7678ed;
+    --yellow: #f7b801;
+    --orange: #f18701;
+    --dark-orange: #f35b04;
+    --red: #f32104;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Source Code Pro", monospace;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Code Pro", monospace;
+  overflow-x: hidden;
 }
 
 body {
-    background-image: url("assets/media/images/background.jpg");
-    background-size: cover;
-    width: 100%;
-    overflow: hidden;
+  background-image: url("assets/media/images/background.jpg");
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
 }
 
 .main-container {
-    padding: 150px 100px 0 100px;
+  padding: 150px 100px 0 100px;
 }
 
 .darkpurple_bg {
-    background-color: #3d348b;
+  background-color: #3d348b;
 }
 
 .purple_bg {
-    background-color: #5050C8;
+  background-color: #5050c8;
 }
 
 .lightpurple_bg {
-    background-color: #7678ed;
+  background-color: #7678ed;
 }
 
 .black_bg {
-    background-color: black;
+  background-color: black;
+}
+
+.nav-btn {
+  font-size: medium;
+  font-weight: bold;
+  padding: 8px;
+  width: 150px;
+  border: 3px solid black;
+  border-radius: 8px;
+  background-color: var(--off-white);
+
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
 }
