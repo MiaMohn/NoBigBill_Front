@@ -1,16 +1,3 @@
 <div class="balance-list">
-    <table>
-      <thead>
-        <tr>
-          <th>User</th>
-          <th>Balance</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let user of getKeys(balances)">
-          <td>{{ user }}</td>
-          <td>{{ balances[user] | number:'1.2-2' }}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  <app-balance-chart [balances]="balances"></app-balance-chart>
+</div>
