@@ -16,7 +16,10 @@
         </div>
 
         <td class="btn-handle-expense">
-          <app-update-expense></app-update-expense>
+          <app-update-expense
+            [expense]="expense"
+            (expenseUpdated)="onExpenseUpdated()"
+          ></app-update-expense>
           <app-delete-expense
             class="btn"
             [expenseId]="expense.id"

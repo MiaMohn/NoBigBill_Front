@@ -8,11 +8,12 @@ import { UserService } from '../../../services/user/user.service';
 import { AddExpenseComponent } from '../add-expense/add-expense.component';
 import { DeleteExpenseComponent } from '../delete-expense/delete-expense.component';
 import { UpdateExpenseComponent } from '../update-expense/update-expense.component';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-expense-list',
   standalone: true,
-  imports: [CommonModule, RouterModule, AddExpenseComponent, DeleteExpenseComponent, UpdateExpenseComponent],
+  imports: [CommonModule, RouterModule, AddExpenseComponent, DeleteExpenseComponent, UpdateExpenseComponent, MatDialogModule],
   templateUrl: './expense-list.component.html',
   styleUrl: './expense-list.component.css',
 })
@@ -22,7 +23,8 @@ export class ExpenseListComponent implements OnInit {
 
   constructor(
     private expenseService: ExpenseService,
-    private userService: UserService
+    private userService: UserService,
+    public dialog: MatDialog
   ) {}
 
   ngOnInit(): void {
@@ -50,8 +52,8 @@ export class ExpenseListComponent implements OnInit {
     this.loadExpenses();
   }
 
-  getUserById(userId: number): User | undefined {
-    return this.users.find((user) => user.id === userId);
+  getUserById(user_id: number): User | undefined {
+    return this.users.find((user) => user.id === user_id);
   }
 
   onExpenseDeleted(): void {
@@ -60,6 +62,10 @@ export class ExpenseListComponent implements OnInit {
 
   onUserDeleted(): void {
     this.loadUsers();
+    this.loadExpenses();
+  }
+
+  onExpenseUpdated(): void {
     this.loadExpenses();
   }
 

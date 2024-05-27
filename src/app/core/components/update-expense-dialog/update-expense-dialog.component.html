@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>Update Expense</h1>
+<div mat-dialog-content>
+  <form [formGroup]="updateForm">
+    <textarea id="description" formControlName="description" placeholder="Description"></textarea>
+    <div>
+      <input id="amount" formControlName="amount" placeholder="Amount" type="number" />
+      <span>€</span>
+      <select id="user_id" formControlName="user_id">
+        <option *ngFor="let user of users" [value]="user.id">{{ user.name }}</option>
+      </select>
+    </div>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button class="custom-button" (click)="onNoClick()">Cancel</button>
+  <button class="custom-button" (click)="onConfirmClick()">Update</button>
+</div>

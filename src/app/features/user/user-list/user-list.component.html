@@ -7,7 +7,10 @@
         <div class="item">
           <td class="userName-list">{{ user.name }}</td>
           <td class="btn-handle-user">
-            <app-update-user></app-update-user>
+            <app-update-user
+              [user]="user"
+              (userUpdated)="onUserUpdated()"
+            ></app-update-user>
             <app-delete-user
               class="btn"
               [userId]="user.id"
