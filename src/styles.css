@@ -57,3 +57,7 @@ body {
   transition-property: color, background-color;
   transition-duration: 0.2s;
 }
+
+.cdk-overlay-dark-backdrop {
+  background: rgba(61, 52, 139, .50);
+}

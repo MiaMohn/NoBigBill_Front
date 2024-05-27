@@ -1,7 +1,9 @@
-<div mat-dialog-content>
-  <p>Are you really sure you want to delete it?</p>
-</div>
-<div mat-dialog-actions>
-  <button mat-button (click)="onNoClick()">Cancel</button>
-  <button mat-button color="warn" (click)="onConfirmClick()">Delete</button>
+<div class="delete-dialog">
+  <div mat-dialog-content>
+    <p class="text-confirm">Are you really sure you want to delete it?</p>
+  </div>
+  <div class="btn-actions" mat-dialog-actions>
+    <button class="btn-delete-dialog cancel-btn" mat-button (click)="onNoClick()">Cancel</button>
+    <button class="btn-delete-dialog delete-btn" mat-button (click)="onConfirmClick()">Delete</button>
+  </div>
 </div>

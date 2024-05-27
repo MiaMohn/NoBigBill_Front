@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, ViewEncapsulation } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
@@ -6,7 +6,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
   standalone: true,
   imports: [],
   templateUrl: './delete-dialog.component.html',
-  styleUrl: './delete-dialog.component.css'
+  styleUrl: './delete-dialog.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class DeleteDialogComponent {
 

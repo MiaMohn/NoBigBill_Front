@@ -19,15 +19,9 @@ export class DeleteUserComponent {
 
   constructor(private userService: UserService, public dialog: MatDialog) {}
 
-  /*deleteUser(): void {
-    this.userService.deleteUser(this.userId).subscribe(() => {
-      this.userDeleted.emit();
-    });
-  }*/
-
   deleteUser(): void {
     const dialogRef = this.dialog.open(DeleteDialogComponent, {
-      width: '250px',
+      panelClass: 'custom-dialog',
       data: { userId: this.userId },
     });
 

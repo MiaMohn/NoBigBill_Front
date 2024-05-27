@@ -30,7 +30,7 @@ export class DeleteExpenseComponent {
 
   deleteExpense(): void {
     const dialogRef = this.dialog.open(DeleteDialogComponent, {
-      width: '250px',
+      panelClass: 'custom-dialog',
       data: { expenseId: this.expenseId },
     });
 
@@ -42,10 +42,4 @@ export class DeleteExpenseComponent {
       }
     });
   }
-
-  /*deleteExpense(): void {
-    this.expenseService.deleteExpense(this.expenseId).subscribe(() => {
-      this.expenseDeleted.emit();
-    });
-  }*/
 }
