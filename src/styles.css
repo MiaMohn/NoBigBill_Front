@@ -1,13 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --off-white: #f7f7ed;
-    --purple: #5050c8;
-    --dark-purple: #3d348b;
-    --light-purple: #7678ed;
-    --yellow: #f7b801;
-    --orange: #f18701;
-    --dark-orange: #f35b04;
-    --red: #f32104;
+  --off-white: #f7f7ed;
+  --purple: #5050c8;
+  --dark-purple: #3d348b;
+  --light-purple: #7678ed;
+  --yellow: #f7b801;
+  --orange: #f18701;
+  --dark-orange: #f35b04;
+  --red: #f32104;
 }
 
 * {
@@ -23,6 +23,7 @@ body {
   background-size: cover;
   width: 100%;
   overflow: hidden;
+  cursor: url("assets/media/images/mouse.png"), auto !important;
 }
 
 .main-container {
@@ -59,9 +60,13 @@ body {
 }
 
 .cdk-overlay-dark-backdrop {
-  background: rgba(61, 52, 139, .50);
+  background: rgba(61, 52, 139, 0.5);
 }
 
 .mat-mdc-dialog-container .mdc-dialog__surface {
   background-color: transparent !important;
+}
+
+button:hover , input:hover, select:hover{
+  cursor: url("assets/media/images/mouse-pointer.png"), auto !important;
 }
