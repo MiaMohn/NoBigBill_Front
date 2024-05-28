@@ -21,7 +21,7 @@ export class UpdateUserComponent {
 
   updateUser(): void {
     const dialogRef = this.dialog.open(UpdateUserDialogComponent, {
-      width: '250px',
+      panelClass: 'custom-dialog',
       data: { ...this.user }
     });
 

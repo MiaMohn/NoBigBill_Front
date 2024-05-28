@@ -61,3 +61,7 @@ body {
 .cdk-overlay-dark-backdrop {
   background: rgba(61, 52, 139, .50);
 }
+
+.mat-mdc-dialog-container .mdc-dialog__surface {
+  background-color: transparent !important;
+}

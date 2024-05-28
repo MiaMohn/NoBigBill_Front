@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { UserService } from '../../../services/user/user.service';
@@ -10,6 +10,7 @@ import { UserService } from '../../../services/user/user.service';
   imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './update-expense-dialog.component.html',
   styleUrl: './update-expense-dialog.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class UpdateExpenseDialogComponent implements OnInit {
   updateForm: FormGroup;

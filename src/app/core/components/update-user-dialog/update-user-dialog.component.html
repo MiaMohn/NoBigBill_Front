@@ -1,10 +1,12 @@
-<h1 mat-dialog-title>Update User</h1>
-<div mat-dialog-content>
-  <form [formGroup]="updateForm">
-    <input formControlName="name" placeholder="Update user name" />
-  </form>
-</div>
-<div mat-dialog-actions>
-  <button class="custom-button" (click)="onNoClick()">Cancel</button>
-  <button class="custom-button" (click)="onConfirmClick()">Update</button>
+<div class="update-dialog">
+  <div mat-dialog-content>
+    <form [formGroup]="updateForm">
+      <span>New name: </span>
+      <input class="new-name-input" formControlName="name" placeholder="Update user name" />
+    </form>
+  </div>
+  <div class="btn-actions" mat-dialog-actions>
+    <button class="btn-update-dialog btn-cancel" (click)="onNoClick()">Cancel</button>
+    <button class="btn-update-dialog btn-save" (click)="onConfirmClick()">Save</button>
+  </div>
 </div>

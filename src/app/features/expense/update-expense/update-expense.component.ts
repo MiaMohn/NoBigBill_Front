@@ -22,7 +22,7 @@ export class UpdateExpenseComponent {
 
   updateExpense(): void {
     const dialogRef = this.dialog.open(UpdateExpenseDialogComponent, {
-      width: '250px',
+      panelClass: 'custom-dialog',
       data: { ...this.expense }
     });
 

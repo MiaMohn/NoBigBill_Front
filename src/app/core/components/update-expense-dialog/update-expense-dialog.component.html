@@ -1,17 +1,33 @@
-<h1 mat-dialog-title>Update Expense</h1>
-<div mat-dialog-content>
-  <form [formGroup]="updateForm">
-    <textarea id="description" formControlName="description" placeholder="Description"></textarea>
-    <div>
-      <input id="amount" formControlName="amount" placeholder="Amount" type="number" />
-      <span>€</span>
-      <select id="user_id" formControlName="user_id">
-        <option *ngFor="let user of users" [value]="user.id">{{ user.name }}</option>
-      </select>
-    </div>
-  </form>
-</div>
-<div mat-dialog-actions>
-  <button class="custom-button" (click)="onNoClick()">Cancel</button>
-  <button class="custom-button" (click)="onConfirmClick()">Update</button>
+<div class="update-dialog">
+  <div mat-dialog-content class="update-expense-form" [formGroup]="updateForm">
+      <input
+        id="description"
+        formControlName="description"
+        type="text"
+        placeholder="Description"
+        name="description"
+      />
+      <div class="amount-user">
+        <div class="amount">
+          <input
+            id="amount"
+            formControlName="amount"
+            placeholder="Amount"
+            type="number"
+          />
+          <span>€</span>
+        </div>
+
+        <select id="user_id" formControlName="user_id">
+          <option [value]="null" disabled selected>User</option>
+          <option *ngFor="let user of users" [value]="user.id">
+            {{ user.name }}
+          </option>
+        </select>
+      </div>
+  </div>
+  <div class="btn-actions" mat-dialog-actions>
+    <button class="btn-update-dialog btn-cancel" (click)="onNoClick()">Cancel</button>
+    <button class="btn-update-dialog btn-save" (click)="onConfirmClick()">Save</button>
+  </div>
 </div>

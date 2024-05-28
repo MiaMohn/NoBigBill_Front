@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { User } from '../../../models/user.model';
@@ -10,6 +10,7 @@ import { User } from '../../../models/user.model';
   imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './update-user-dialog.component.html',
   styleUrl: './update-user-dialog.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class UpdateUserDialogComponent {
   updateForm: FormGroup;
