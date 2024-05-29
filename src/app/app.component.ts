@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './core/components/header/header.component';
 import { HeroImageComponent } from './core/components/hero-image/hero-image.component';
 import { DataContainerComponent } from './core/components/data-container/data-container.component';
+import { FooterComponent } from './core/components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { DataContainerComponent } from './core/components/data-container/data-co
     HeaderComponent,
     HeroImageComponent,
     DataContainerComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

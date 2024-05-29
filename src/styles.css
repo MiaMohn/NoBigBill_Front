@@ -67,6 +67,9 @@ body {
   background-color: transparent !important;
 }
 
-button:hover , input:hover, select:hover{
+button:hover,
+input:hover,
+select:hover,
+a:hover {
   cursor: url("assets/media/images/mouse-pointer.png"), auto !important;
 }
