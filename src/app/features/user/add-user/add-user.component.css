@@ -17,20 +17,6 @@
   outline: none;
 }
 
-.add-user-form button {
-  font-size: medium;
-  font-weight: bold;
-  padding: 8px;
-  width: 100px;
-  border: 3px solid black;
-  border-radius: 8px;
-  background-color: var(--off-white);
-  cursor: pointer;
-
-  transition-property: color, background-color;
-  transition-duration: 0.2s;
-}
-
 .add-user-form button:hover {
   background-color: var(--dark-purple);
   color: var(--off-white);

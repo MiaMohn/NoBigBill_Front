@@ -30,23 +30,7 @@ body {
   padding: 150px 100px 0 100px;
 }
 
-.darkpurple_bg {
-  background-color: #3d348b;
-}
-
-.purple_bg {
-  background-color: #5050c8;
-}
-
-.lightpurple_bg {
-  background-color: #7678ed;
-}
-
-.black_bg {
-  background-color: black;
-}
-
-.nav-btn {
+.long-btn {
   font-size: medium;
   font-weight: bold;
   padding: 8px;
@@ -55,6 +39,19 @@ body {
   border-radius: 8px;
   background-color: var(--off-white);
 
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+}
+
+.medium-btn {
+  font-size: medium;
+  font-weight: bold;
+  padding: 8px;
+  width: 100px;
+  border: 3px solid black;
+  border-radius: 8px;
+  background-color: var(--off-white);
+  cursor: pointer;
   transition-property: color, background-color;
   transition-duration: 0.2s;
 }
