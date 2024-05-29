@@ -22,13 +22,3 @@
   gap: 20px;
   justify-content: center;
 }
-
-.cancel-btn:hover {
-  background-color: var(--yellow);
-  color: var(--off-white);
-}
-
-.delete-btn:hover {
-  background-color: var(--red);
-  color: var(--off-white);
-}

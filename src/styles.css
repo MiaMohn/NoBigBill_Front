@@ -56,6 +56,46 @@ body {
   transition-duration: 0.2s;
 }
 
+.btn-dark-purple:hover{
+  background-color: var(--dark-purple);
+  color: var(--off-white);
+}
+
+.btn-orange:hover {
+  background-color: var(--orange);
+  color: var(--off-white);
+}
+
+.btn-light-purple:hover {
+  background-color: var(--light-purple);
+  color: var(--off-white);
+}
+
+.btn-yellow:hover {
+  background-color: var(--yellow);
+  color: var(--off-white);
+}
+
+.btn-red:hover {
+  background-color: var(--red);
+  color: var(--off-white);
+}
+
+.focus-btn-orange:focus {
+  background-color: var(--orange);
+  color: var(--off-white);
+}
+
+.focus-btn-light-purple:focus {
+  background-color: var(--light-purple);
+  color: var(--off-white);
+}
+
+.focus-btn-yellow:focus {
+  background-color: var(--yellow);
+  color: var(--off-white);
+}
+
 .cdk-overlay-dark-backdrop {
   background: rgba(61, 52, 139, 0.5);
 }

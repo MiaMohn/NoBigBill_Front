@@ -16,8 +16,3 @@
 .add-user-form input:focus {
   outline: none;
 }
-
-.add-user-form button:hover {
-  background-color: var(--dark-purple);
-  color: var(--off-white);
-}

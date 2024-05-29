@@ -47,8 +47,3 @@
   height: auto;
   text-align: center;
 }
-
-.add-expense-form button:hover {
-  background-color: var(--dark-purple);
-  color: var(--off-white);
-}
