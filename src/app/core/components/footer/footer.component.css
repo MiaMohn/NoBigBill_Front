@@ -6,7 +6,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  border-top: 3px solid black;
+  border-top: var(--border-black);
 }
 
 .side_column {

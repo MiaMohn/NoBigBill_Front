@@ -10,7 +10,7 @@
   margin: 10px 0;
   padding: 10px;
   font-size: 1rem;
-  border: 3px solid black;
+  border: var(--border-black);
   border-radius: 8px;
 }
 
@@ -33,7 +33,7 @@
   position: absolute;
   right: 50px;
   top: 13px;
-  border-left: 3px solid black;
+  border-left: var(--border-black);
   padding: 10px 0 10px 40px;
   font-weight: bold;
 }

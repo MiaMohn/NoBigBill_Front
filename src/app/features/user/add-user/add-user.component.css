@@ -6,7 +6,7 @@
 
 .add-user-form input {
   background-color: var(--off-white);
-  border: 3px solid black;
+  border: var(--border-black);
   border-radius: 8px;
   padding: 10px;
   max-width: 350px;

@@ -8,7 +8,7 @@
   width: 50%;
   height: fit-content;
   background-color: var(--off-white);
-  border: 3px solid black;
+  border: var(--border-black);
   border-radius: 50px;
   position: relative;
   margin-right: 20px;
@@ -20,7 +20,7 @@
   background-color: var(--orange);
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  border-bottom: 3px solid black;
+  border-bottom: var(--border-black);
   position: absolute;
   top: 0;
   left: 0;
@@ -42,7 +42,7 @@
   background-color: var(--dark-orange);
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  border-top: 3px solid black;
+  border-top: var(--border-black);
   position: absolute;
   bottom: 0;
   left: 0;

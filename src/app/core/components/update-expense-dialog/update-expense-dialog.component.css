@@ -1,7 +1,7 @@
 .update-dialog {
   padding: 40px;
   border-radius: 20px;
-  border: 3px solid black;
+  border: var(--border-black);
   background-color: var(--off-white);
   display: grid;
   gap: 40px;
@@ -14,7 +14,7 @@
   margin: 10px 0;
   padding: 10px;
   font-size: 1rem;
-  border: 3px solid black;
+  border: var(--border-black);
   border-radius: 8px;
   width: 100%;
 }
@@ -38,7 +38,7 @@
   position: absolute;
   right: 30px;
   top: 13px;
-  border-left: 3px solid black;
+  border-left: var(--border-black);
   padding: 10px 0 10px 20px;
   font-weight: bold;
 }

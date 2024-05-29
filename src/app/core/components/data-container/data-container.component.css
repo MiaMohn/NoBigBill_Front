@@ -3,7 +3,7 @@
   justify-content: center;
   width: 100%;
   background-color: var(--off-white);
-  border: 3px solid black;
+  border: var(--border-black);
   border-radius: 50px;
   position: relative;
   margin-right: 20px;
