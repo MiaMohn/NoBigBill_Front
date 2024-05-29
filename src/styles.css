@@ -24,7 +24,7 @@ body {
   background-size: cover;
   width: 100%;
   overflow: hidden;
-  cursor: url("assets/media/images/mouse.png"), auto !important;
+  cursor: url("assets/media/images/mouse.svg"), auto !important;
 }
 
 .main-container {
@@ -109,5 +109,5 @@ button:hover,
 input:hover,
 select:hover,
 a:hover {
-  cursor: url("assets/media/images/mouse-pointer.png"), auto !important;
+  cursor: url("assets/media/images/mouse-pointer.svg"), auto !important;
 }
