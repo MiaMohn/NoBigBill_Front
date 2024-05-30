@@ -2,6 +2,7 @@
   <div mat-dialog-content class="update-expense-form" [formGroup]="updateForm">
       <input
         id="description"
+        class="dialog-input"
         formControlName="description"
         type="text"
         placeholder="Description"
@@ -11,6 +12,7 @@
         <div class="amount">
           <input
             id="amount"
+            class="dialog-input"
             formControlName="amount"
             placeholder="Amount"
             type="number"
@@ -18,7 +20,7 @@
           <span>€</span>
         </div>
 
-        <select id="user_id" formControlName="user_id">
+        <select id="user_id" class="dialog-input" formControlName="user_id">
           <option [value]="null" disabled selected>User</option>
           <option *ngFor="let user of users" [value]="user.id">
             {{ user.name }}

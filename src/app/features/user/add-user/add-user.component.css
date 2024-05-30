@@ -1,7 +1,5 @@
 .add-user-form {
-  display: flex;
   margin-bottom: 80px;
-  gap: 20px;
 }
 
 .add-user-form input {

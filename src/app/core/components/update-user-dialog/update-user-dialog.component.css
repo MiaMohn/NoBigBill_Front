@@ -1,32 +1,5 @@
-.update-dialog {
-  padding: 40px;
-  border-radius: 20px;
-  border: var(--border-black);
-  background-color: var(--off-white);
-  display: grid;
-  gap: 40px;
-  justify-items: center;
-}
-
 span {
   font-size: medium;
   font-weight: bold;
 }
 
-.new-name-input {
-  background-color: var(--off-white);
-  border: var(--border-black);
-  border-radius: 8px;
-  padding: 10px;
-  max-width: 350px;
-}
-
-.new-name-input:focus {
-  outline: none;
-}
-
-.btn-actions {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}

@@ -6,7 +6,7 @@
       <tr *ngFor="let user of users">
         <div class="item">
           <td class="userName-list">{{ user.name }}</td>
-          <td class="btn-handle-user">
+          <td class="btn-actions">
             <app-update-user
               [user]="user"
               (userUpdated)="onUserUpdated()"

@@ -1,32 +1,12 @@
-.update-dialog {
-  padding: 40px;
-  border-radius: 20px;
-  border: var(--border-black);
-  background-color: var(--off-white);
-  display: grid;
-  gap: 40px;
-  justify-items: center;
-}
-
 .update-expense-form input,
 .update-expense-form select {
-  background-color: var(--off-white);
-  margin: 10px 0;
-  padding: 10px;
-  font-size: 1rem;
-  border: var(--border-black);
-  border-radius: 8px;
   width: 100%;
-}
-
-.update-expense-form input:focus,
-.update-expense-form select:focus {
-  outline: none;
 }
 
 .amount-user {
   display: flex;
   gap: 20px;
+  margin-top: 20px;
 }
 
 .amount {
@@ -37,7 +17,7 @@
 .amount span {
   position: absolute;
   right: 30px;
-  top: 13px;
+  top: 3px;
   border-left: var(--border-black);
   padding: 10px 0 10px 20px;
   font-weight: bold;
@@ -47,8 +27,3 @@
   width: 50%;
 }
 
-.btn-actions {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
