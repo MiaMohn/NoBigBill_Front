@@ -135,13 +135,13 @@ select:focus {
   justify-items: center;
 }
 
-.btn-gap {
-  display: flex;
-  gap: 20px;
-}
-
 .btn-actions {
   display: flex;
   gap: 20px;
   justify-content: center;
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: medium;
 }

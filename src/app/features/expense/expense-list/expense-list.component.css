@@ -4,32 +4,28 @@
 }
 
 .expense-list table {
-    border-spacing: 0;
+  border-spacing: 0;
 }
 
 .item {
-    border-bottom: var(--border-black);
-    margin-bottom: 10px;
-    width: 100%;
+  border-bottom: var(--border-black);
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 tr {
-    display: block;
-    margin-bottom: 50px;
+  display: block;
+  margin-bottom: 50px;
 }
 
 .btn-handle-expense {
-    display: flex;
-    justify-content: right;
-    gap: 20px;
+  display: flex;
+  justify-content: right;
+  gap: 20px;
 }
 
 .line {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-td>span{
-    font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }

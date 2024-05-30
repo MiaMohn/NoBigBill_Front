@@ -22,10 +22,8 @@
   justify-content: center;
 }
 
-.text {
+.bold-text {
   color: var(--off-white);
-  font-weight: bold;
-  font-size: medium;
   line-height: 1.5;
 }
 
