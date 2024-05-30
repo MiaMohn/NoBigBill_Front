@@ -6,7 +6,6 @@
 
 .item {
   display: flex;
-  width: 100%;
   gap: 15px;
   margin-bottom: 20px;
 }
@@ -14,12 +13,7 @@
 .userName-list {
   width: 50%;
   border-bottom: var(--border-black);
-  justify-content: left;
   margin: auto;
   padding: 10px;
   text-align: center;
-}
-
-.btn-actions {
-  justify-content: end;
 }

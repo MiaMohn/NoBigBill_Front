@@ -1,11 +1,8 @@
 .footer {
   background-color: var(--dark-orange);
   margin-top: 150px;
-  height: 250px;
   padding: 40px 50px 40px 50px;
-  width: 100%;
   display: flex;
-  align-items: center;
   border-top: var(--border-black);
 }
 
@@ -29,7 +26,6 @@
 
 .footer-logo {
   max-height: 50px;
-  max-width: 100%;
 }
 
 .personal-logo {
@@ -39,7 +35,7 @@
 .icons-container {
   display: flex;
   gap: 30px;
-  font-size: 60px;
+  font-size: 3em;
   justify-content: center;
 }
 

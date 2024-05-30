@@ -52,7 +52,6 @@ body {
   border: var(--border-black);
   border-radius: 8px;
   background-color: var(--off-white);
-  cursor: pointer;
   transition-property: color, background-color;
   transition-duration: 0.2s;
 }
@@ -125,14 +124,13 @@ select:focus {
   font-size: medium;
 }
 
-.update-dialog {
+.dialog {
   padding: 40px;
   border-radius: 20px;
   border: var(--border-black);
   background-color: var(--off-white);
   display: grid;
   gap: 40px;
-  justify-items: center;
 }
 
 .btn-actions {

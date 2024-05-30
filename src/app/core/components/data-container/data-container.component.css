@@ -1,12 +1,10 @@
 .custom-container {
   display: flex;
   justify-content: center;
-  width: 100%;
   background-color: var(--off-white);
   border: var(--border-black);
   border-radius: 50px;
   position: relative;
-  margin-right: 20px;
   box-shadow: 20px 20px 0px 0px rgba(118, 120, 237, 0.2);
   margin-bottom: 20px;
 }
@@ -14,9 +12,6 @@
 .header-bar {
   height: 80px;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   padding-top: 25px;
   text-align: center;
   overflow: hidden;
@@ -28,15 +23,14 @@
   border-radius: 50%;
   display: inline-block;
   margin: 12px 50px;
+  background-color: black;
 }
 
 .menu {
   display: flex;
   gap: 10px;
-  justify-content: center;
 }
 
 .data-container {
   padding: 50px 0 80px 0;
-  justify-content: center;
 }

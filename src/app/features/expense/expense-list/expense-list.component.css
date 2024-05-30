@@ -10,7 +10,6 @@
 .item {
   border-bottom: var(--border-black);
   margin-bottom: 10px;
-  width: 100%;
 }
 
 tr {
@@ -18,10 +17,8 @@ tr {
   margin-bottom: 50px;
 }
 
-.btn-handle-expense {
-  display: flex;
+.btn-actions {
   justify-content: right;
-  gap: 20px;
 }
 
 .line {
