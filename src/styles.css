@@ -1,5 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+/*|| Global Variables*/
+
 :root {
+  /*Colors*/
   --off-white: #f7f7ed;
   --purple: #5050c8;
   --dark-purple: #3d348b;
@@ -8,100 +10,37 @@
   --orange: #f18701;
   --dark-orange: #f35b04;
   --red: #f32104;
+  /*Border*/
   --border-black: 3px solid black;
+  /*Font size*/
+  --medium: 1rem;
+  --small: 0.8125rem;
+  --large: 3rem;
 }
 
+/* || General styles */
+
 * {
+  /* Reset default margins/paddings */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Source Code Pro", monospace;
   overflow-x: hidden;
+
+  /* Font */
+  font-family: "Source Code Pro", monospace;
+  font-size: var(--medium);
 }
 
 body {
   background-image: url("assets/media/images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  width: 100%;
+  height: 100%;
   overflow: hidden;
+  /* Default image for cursor */
   cursor: url("assets/media/images/mouse.svg"), auto !important;
-}
-
-.main-container {
-  padding: 150px 100px 0 100px;
-}
-
-.long-btn {
-  font-size: medium;
-  font-weight: bold;
-  padding: 8px;
-  width: 150px;
-  border: var(--border-black);
-  border-radius: 8px;
-  background-color: var(--off-white);
-
-  transition-property: color, background-color;
-  transition-duration: 0.2s;
-}
-
-.medium-btn {
-  font-size: medium;
-  font-weight: bold;
-  padding: 8px;
-  width: 100px;
-  border: var(--border-black);
-  border-radius: 8px;
-  background-color: var(--off-white);
-  transition-property: color, background-color;
-  transition-duration: 0.2s;
-}
-
-.btn-dark-purple:hover{
-  background-color: var(--dark-purple);
-  color: var(--off-white);
-}
-
-.btn-orange:hover {
-  background-color: var(--orange);
-  color: var(--off-white);
-}
-
-.btn-light-purple:hover {
-  background-color: var(--light-purple);
-  color: var(--off-white);
-}
-
-.btn-yellow:hover {
-  background-color: var(--yellow);
-  color: var(--off-white);
-}
-
-.btn-red:hover {
-  background-color: var(--red);
-  color: var(--off-white);
-}
-
-.focus-btn-orange:focus {
-  background-color: var(--orange);
-  color: var(--off-white);
-}
-
-.focus-btn-light-purple:focus {
-  background-color: var(--light-purple);
-  color: var(--off-white);
-}
-
-.focus-btn-yellow:focus {
-  background-color: var(--yellow);
-  color: var(--off-white);
-}
-
-.cdk-overlay-dark-backdrop {
-  background: rgba(61, 52, 139, 0.5);
-}
-
-.mat-mdc-dialog-container .mdc-dialog__surface {
-  background-color: transparent !important;
 }
 
 button:hover,
@@ -116,30 +55,116 @@ select:focus {
   outline: none;
 }
 
+.main-container {
+  padding: 10% 7% 0 7%;
+}
+
+.button--long {
+  font-weight: bold;
+  padding: 0.5rem;
+  width: 150px;
+  border: var(--border-black);
+  border-radius: 0.5rem;
+  background-color: var(--off-white);
+
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+}
+
+.medium-btn {
+  font-weight: bold;
+  padding: 0.5rem;
+  width: 100px;
+  border: var(--border-black);
+  border-radius: 0.5rem;
+  background-color: var(--off-white);
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+}
+
+.btn-dark-purple:hover{
+  background-color: var(--dark-purple);
+  color: var(--off-white);
+}
+
+.button--orange:hover {
+  background-color: var(--orange);
+  color: var(--off-white);
+}
+
+.button--light-purple:hover {
+  background-color: var(--light-purple);
+  color: var(--off-white);
+}
+
+.button--yellow:hover {
+  background-color: var(--yellow);
+  color: var(--off-white);
+}
+
+.btn-red:hover {
+  background-color: var(--red);
+  color: var(--off-white);
+}
+
+.button--focus-orange:focus {
+  background-color: var(--orange);
+  color: var(--off-white);
+}
+
+.button--focus-light-purple:focus {
+  background-color: var(--light-purple);
+  color: var(--off-white);
+}
+
+.button--focus-yellow:focus {
+  background-color: var(--yellow);
+  color: var(--off-white);
+}
+
+.cdk-overlay-dark-backdrop {
+  background: rgba(61, 52, 139, 0.5);
+}
+
+.mat-mdc-dialog-container .mdc-dialog__surface {
+  background-color: transparent !important;
+}
+
+
+
 .dialog-input {
   background-color: var(--off-white);
   border: var(--border-black);
-  border-radius: 8px;
-  padding: 10px;
-  font-size: medium;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
 .dialog {
-  padding: 40px;
-  border-radius: 20px;
+  padding: 2.5rem;
+  border-radius: 1.25rem;
   border: var(--border-black);
   background-color: var(--off-white);
   display: grid;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .btn-actions {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   justify-content: center;
 }
 
 .bold-text {
   font-weight: bold;
-  font-size: medium;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-container {
+    padding: 5% 2%;
+  }
+
+  .button--long, .medium-btn {
+    padding: 0.75rem;
+  }
 }

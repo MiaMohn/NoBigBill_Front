@@ -35,7 +35,7 @@
 .icons-container {
   display: flex;
   gap: 30px;
-  font-size: 3em;
+  font-size: var(--large);
   justify-content: center;
 }
 
