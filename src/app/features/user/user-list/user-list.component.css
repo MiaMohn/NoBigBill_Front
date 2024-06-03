@@ -1,19 +1,62 @@
 .user-list,
-.user-list table {
+.user-list__table {
   width: 100%;
   border-spacing: 0;
 }
 
 .item {
+  margin: 0 25% 20px 25%;
   display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
 }
 
 .userName-list {
   width: 50%;
   border-bottom: var(--border-black);
-  margin: auto;
   padding: 10px;
   text-align: center;
+}
+
+.button-actions {
+  width: 50%;
+  justify-content: end;
+}
+
+@media only screen and (max-width: 1060px) {
+  .item {
+    margin: 0 20% 20px 20%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .item {
+    margin: 0 10% 20px 10%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+
+  .item {
+    margin: 0 0 20px 0;
+    display: grid;
+  }
+
+  .userName-list {
+    width: 100%;
+  }
+
+  .button-actions {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .userName-list {
+    width: 60%;
+  }
+
+  .button-actions {
+    width: 40%;
+  }
 }

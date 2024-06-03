@@ -2,7 +2,7 @@
   <div mat-dialog-content class="update-expense-form" [formGroup]="updateForm">
       <input
         id="description"
-        class="dialog-input"
+        class="dialog__form__input"
         formControlName="description"
         type="text"
         placeholder="Description"
@@ -12,7 +12,7 @@
         <div class="amount">
           <input
             id="amount"
-            class="dialog-input"
+            class="dialog__form__input"
             formControlName="amount"
             placeholder="Amount"
             type="number"
@@ -20,7 +20,7 @@
           <span>€</span>
         </div>
 
-        <select id="user_id" class="dialog-input" formControlName="user_id">
+        <select id="user_id" class="dialog__form__input" formControlName="user_id">
           <option [value]="null" disabled selected>User</option>
           <option *ngFor="let user of users" [value]="user.id">
             {{ user.name }}
@@ -28,8 +28,8 @@
         </select>
       </div>
   </div>
-  <div class="btn-actions" mat-dialog-actions>
-    <button class="medium-btn button--yellow" (click)="onNoClick()">Cancel</button>
-    <button class="medium-btn btn-dark-purple" (click)="onConfirmClick()">Save</button>
+  <div class="button-actions" mat-dialog-actions>
+    <button class="button--medium button--yellow" (click)="onNoClick()">Cancel</button>
+    <button class="button--medium button--dark-purple" (click)="onConfirmClick()">Save</button>
   </div>
 </div>

@@ -10,18 +10,30 @@
   --orange: #f18701;
   --dark-orange: #f35b04;
   --red: #f32104;
+
   /*Border*/
   --border-black: 3px solid black;
+
   /*Font size*/
-  --medium: 1rem;
-  --small: 0.8125rem;
+  --medium: 1.13rem;
+  --small: 1rem;
   --large: 3rem;
 }
 
 /* || General styles */
 
+html {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 * {
-  /* Reset default margins/paddings */
+  /* Reset */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -29,16 +41,18 @@
 
   /* Font */
   font-family: "Source Code Pro", monospace;
-  font-size: var(--medium);
+  font-size: var(--small);
 }
 
 body {
+  height: 100%;
+  overflow: hidden;
+
   background-image: url("assets/media/images/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100%;
-  overflow: hidden;
+
   /* Default image for cursor */
   cursor: url("assets/media/images/mouse.svg"), auto !important;
 }
@@ -55,14 +69,16 @@ select:focus {
   outline: none;
 }
 
-.main-container {
-  padding: 10% 7% 0 7%;
+.bold-text {
+  font-weight: bold;
 }
+
+/* || Buttons */
 
 .button--long {
   font-weight: bold;
   padding: 0.5rem;
-  width: 150px;
+  width: 9.375rem;
   border: var(--border-black);
   border-radius: 0.5rem;
   background-color: var(--off-white);
@@ -71,10 +87,10 @@ select:focus {
   transition-duration: 0.2s;
 }
 
-.medium-btn {
+.button--medium {
   font-weight: bold;
   padding: 0.5rem;
-  width: 100px;
+  width: 6.25rem;
   border: var(--border-black);
   border-radius: 0.5rem;
   background-color: var(--off-white);
@@ -82,11 +98,12 @@ select:focus {
   transition-duration: 0.2s;
 }
 
-.btn-dark-purple:hover{
-  background-color: var(--dark-purple);
-  color: var(--off-white);
+.button-actions {
+  display: flex;
+  gap: 1.25rem;
 }
 
+/* Hover */
 .button--orange:hover {
   background-color: var(--orange);
   color: var(--off-white);
@@ -102,25 +119,33 @@ select:focus {
   color: var(--off-white);
 }
 
-.btn-red:hover {
+.button--dark-purple:hover {
+  background-color: var(--dark-purple);
+  color: var(--off-white);
+}
+
+.button--red:hover {
   background-color: var(--red);
   color: var(--off-white);
 }
 
-.button--focus-orange:focus {
+/* Focus */
+.button--focus--orange:focus {
   background-color: var(--orange);
   color: var(--off-white);
 }
 
-.button--focus-light-purple:focus {
+.button--focus--light-purple:focus {
   background-color: var(--light-purple);
   color: var(--off-white);
 }
 
-.button--focus-yellow:focus {
+.button--focus--yellow:focus {
   background-color: var(--yellow);
   color: var(--off-white);
 }
+
+/* || Dialog */
 
 .cdk-overlay-dark-backdrop {
   background: rgba(61, 52, 139, 0.5);
@@ -128,15 +153,6 @@ select:focus {
 
 .mat-mdc-dialog-container .mdc-dialog__surface {
   background-color: transparent !important;
-}
-
-
-
-.dialog-input {
-  background-color: var(--off-white);
-  border: var(--border-black);
-  border-radius: 0.5rem;
-  padding: 0.5rem;
 }
 
 .dialog {
@@ -148,23 +164,22 @@ select:focus {
   gap: 2.5rem;
 }
 
-.btn-actions {
-  display: flex;
-  gap: 1.25rem;
-  justify-content: center;
+.dialog__form__input {
+  background-color: var(--off-white);
+  border: var(--border-black);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
-.bold-text {
-  font-weight: bold;
-}
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-  .main-container {
-    padding: 5% 2%;
+@media (max-width: 900px) {
+  .button--long,
+  .button--medium {
+    padding: 0.65rem;
   }
 
-  .button--long, .medium-btn {
-    padding: 0.75rem;
+  .button-actions {
+    gap: 0.65rem;
   }
 }

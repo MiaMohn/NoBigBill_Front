@@ -1,0 +1,14 @@
+.button-actions {
+    justify-content: center;
+}
+
+@media only screen and (max-width: 444px) {
+    .dialog__form {
+        text-align: center;
+    }
+
+    .dialog__form__span,
+    .dialog__form__input {
+        width: 100%;
+    }
+}

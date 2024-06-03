@@ -1,26 +1,29 @@
-.hero-container {
+.hero-image {
   display: flex;
-  padding-bottom: 20px;
-  gap: 40px;
+  padding-bottom: 1.25rem;
+  gap: 2.5rem;
+  padding: 12% 7% 20px 7%;
 }
 
-/*Window format container*/
+/* Container */
 .custom-container {
   width: 50%;
+  position: relative;
   background-color: var(--off-white);
   border: var(--border-black);
   border-radius: 50px;
   box-shadow: 20px 20px 0px 0px rgba(118, 120, 237, 0.2);
 }
 
-.header-bar {
+.custom-container__header {
+  padding: 5px 0 0 30px;
+  overflow: hidden;
   background-color: var(--orange);
   border-bottom: var(--border-black);
-  padding: 5px 0 0 20px;
-  overflow: hidden;
 }
 
-.header-bar .circle {
+.custom-container__header
+  .circle {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -28,60 +31,64 @@
   margin: 12px 5px;
 }
 
-.dark-purple-bg {
+.circle--dark-purple {
   background-color: var(--dark-purple);
 }
 
-.purple-bg {
+.circle--purple {
   background-color: var(--purple);
 }
 
-.light-purple-bg {
+.circle--light-purple {
   background-color: var(--light-purple);
 }
 
-.footer-bar {
+.custom-container__footer {
   height: 40px;
   background-color: var(--dark-orange);
   border-top: var(--border-black);
 }
-/*End*/
 
-.welcome-message {
-  padding: 40px;
+/* Components */
+.custom-container__welcome-message {
+  padding: 2.5rem;
 }
 
-.welcome-message h1 {
+.custom-container__welcome-message__title {
   font-size: var(--medium);
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
-.welcome-message p {
-  font-size: var(--small);
+.custom-container__welcome-message__text {
   line-height: 1.5;
 }
 
-.hero-image-logo {
+.hero-image__logo {
   width: 50%;
   display: flex;
   align-items: center;
 }
 
-.hero-image-logo img {
+.hero-image__logo__img {
   max-width: 100%;
   height: auto;
 }
 
-.button-container {
+.main-container__button {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 10vh;
 }
 
-@media (max-width: 900px) {
+/* Responsive */
+@media only screen and (max-width: 1050px) {
+  .main-container {
+    margin-top: 5vh;
+  }
 
-  .hero-container {
+  .hero-image {
     flex-direction: column;
     align-items: center;
+    gap: 4rem;
   }
 
   .custom-container {
@@ -89,9 +96,24 @@
     width: 100%;
   }
 
-  .hero-image-logo {
+  .hero-image__logo {
     order: 1;
     width: 80%;
     text-align: center;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .main-container {
+      margin-top: 10vh;
+    }
+
+    .hero-image__logo {
+      width: 100%;
+    }
+
+    .main-container__button {
+      text-align: center;
+      margin-top: 5vh;
+    }
   }
 }

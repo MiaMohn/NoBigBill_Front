@@ -1,12 +1,12 @@
 <div class="user-list">
   <app-add-user (userAdded)="onUserAdded()"></app-add-user>
 
-  <table>
+  <table class="user-list__table">
     <tbody>
       <tr *ngFor="let user of users">
         <div class="item">
           <td class="userName-list">{{ user.name }}</td>
-          <td class="btn-actions">
+          <td class="button-actions">
             <app-update-user
               [user]="user"
               (userUpdated)="onUserUpdated()"

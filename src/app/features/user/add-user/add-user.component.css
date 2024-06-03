@@ -1,16 +1,35 @@
 .add-user-form {
-  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 25% 5% 25%;
 }
 
-.add-user-form input {
+.add-user-form__input {
   background-color: var(--off-white);
   border: var(--border-black);
   border-radius: 8px;
   padding: 10px;
-  max-width: 350px;
-  width: 100%;
+  width: 82%
 }
 
-.add-user-form input:focus {
+.add-user-form__input:focus {
   outline: none;
+}
+
+@media only screen and (max-width: 1060px) {
+  .add-user-form {
+    margin: 0 20% 5% 20%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .add-user-form {
+    margin: 0 10% 5% 10%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .add-user-form {
+    margin: 0 0 10% 0;
+  }
 }

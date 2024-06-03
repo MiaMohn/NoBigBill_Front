@@ -1,15 +1,19 @@
 <div class="main-container">
-  <div class="hero-container">
+  
+  <section class="hero-image">
+
+    <!-- Custom container for welcome message -->
     <div class="custom-container">
-      <div class="header-bar">
-        <span class="circle dark-purple-bg"></span>
-        <span class="circle purple-bg"></span>
-        <span class="circle light-purple-bg"></span>
+
+      <div class="custom-container__header">
+        <span class="circle circle--dark-purple"></span>
+        <span class="circle circle--purple"></span>
+        <span class="circle circle--light-purple"></span>
       </div>
 
-      <div class="welcome-message">
-        <h1>Welcome to No Big Bill!</h1>
-        <p>
+      <div class="custom-container__welcome-message">
+        <h1 class="custom-container__welcome-message__title">Welcome to No Big Bill!</h1>
+        <p class="custom-container__welcome-message__text">
           Tired of the awkward “who owes what” conversations? With No Big Bill,
           it's no big deal!😉<br /><br />
           Our super friendly app makes it a breeze to add friends, track
@@ -22,19 +26,22 @@
         </p>
       </div>
 
-      <div class="footer-bar"></div>
+      <div class="custom-container__footer"></div>
     </div>
-    <div class="hero-image-logo">
-      <img
+    
+    <!-- Logo -->
+    <div class="hero-image__logo">
+      <img class="hero-image__logo__img"
         src="../../../../assets/media/images/hero_image_logo.png"
         alt="No Big Bill"
       />
     </div>
-  </div>
+  </section>
 
-  <div class="button-container">
-    <a href="user#data-main-container">
-      <button class="button--long btn-dark-purple">Let's start!</button>
+  <!-- Button that redirects to container with user list -->
+  <div class="main-container__button">
+    <a href="user#main-container">
+      <button class="button--long button--dark-purple">Let's start!</button>
     </a>
   </div>
 </div>

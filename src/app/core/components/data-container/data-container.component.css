@@ -1,6 +1,8 @@
+.main-container {
+  padding: 12% 7% 0 7%;
+}
+
 .custom-container {
-  display: flex;
-  justify-content: center;
   background-color: var(--off-white);
   border: var(--border-black);
   border-radius: 50px;
@@ -9,7 +11,7 @@
   margin-bottom: 20px;
 }
 
-.header-bar {
+.custom-container__header {
   height: 80px;
   position: absolute;
   padding-top: 25px;
@@ -17,7 +19,7 @@
   overflow: hidden;
 }
 
-.header-bar .header-bar__circle {
+.circle {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -28,9 +30,55 @@
 
 .menu {
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
+  margin: 20vh 25% 0 25%;
 }
 
 .data-container {
-  padding: 50px 0 80px 0;
+  padding: 5% 0 8% 0;
+}
+
+@media only screen and (max-width: 1060px) {
+
+  .menu {
+    margin: 20vh 20% 0 20%;
+  }
+  
+}
+
+@media only screen and (max-width: 900px) {
+
+  .menu {
+    margin: 20vh 10% 0 10%;
+  }
+  
+}
+
+@media only screen and (max-width: 580px) {
+  
+  .menu {
+    justify-content:space-between;
+    padding: 0 5% 0 5%;
+    margin: 15vh 0 0 0;
+  }
+
+  .button {
+    width: 8rem;
+  }
+
+  .data-container {
+    padding: 5% 5% 8% 5%;
+  }
+
+  .circle {
+    width: 20px;
+    height: 20px;
+    margin: 12px 20px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .button {
+    width: 6rem;
+  }
 }

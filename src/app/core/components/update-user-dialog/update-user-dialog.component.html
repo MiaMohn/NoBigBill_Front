@@ -1,12 +1,12 @@
 <div class="dialog">
   <div mat-dialog-content>
-    <form [formGroup]="updateForm">
-      <span class="bold-text">New name: </span>
-      <input class="dialog-input" formControlName="name" placeholder="Update user name" />
+    <form class="dialog__form" [formGroup]="updateForm">
+      <span class="dialog__form__span bold-text">New name: </span>
+      <input class="dialog__form__input" formControlName="name" placeholder="Update user name" />
     </form>
   </div>
-  <div class="btn-actions" mat-dialog-actions>
-    <button class="medium-btn button--yellow" (click)="onNoClick()">Cancel</button>
-    <button class="medium-btn btn-dark-purple" (click)="onConfirmClick()">Save</button>
+  <div class="button-actions" mat-dialog-actions>
+    <button class="button--medium button--yellow" (click)="onNoClick()">Cancel</button>
+    <button class="button--medium button--dark-purple" (click)="onConfirmClick()">Save</button>
   </div>
 </div>
