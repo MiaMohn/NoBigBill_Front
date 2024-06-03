@@ -1,9 +1,9 @@
 .expense-list,
-.expense-list table {
+.expense-list__table {
   width: 100%;
 }
 
-.expense-list table {
+.expense-list__table {
   border-spacing: 0;
 }
 
@@ -15,6 +15,7 @@
 tr {
   display: block;
   margin-bottom: 50px;
+  margin: 0 25% 5% 25%;
 }
 
 .button-actions {
@@ -25,4 +26,26 @@ tr {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1060px) {
+  tr {
+    margin: 0 20% 5% 20%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  tr {
+    margin: 0 10% 5% 10%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  tr {
+    margin: 0 0 10% 0;
+  }
+
+  .button-actions {
+    justify-content: center;
+  }
 }

@@ -1,6 +1,7 @@
 .update-expense-form input,
 .update-expense-form select {
   width: 100%;
+  padding: 10px;
 }
 
 .amount-user {
@@ -14,7 +15,12 @@
   width: 50%;
 }
 
-.amount span {
+.amount__input {
+  padding: 11px 10px;
+  width: 100%;
+}
+
+.amount__span {
   position: absolute;
   right: 30px;
   top: 3px;
@@ -27,3 +33,13 @@
   width: 50%;
 }
 
+.button-actions {
+  justify-content: center;
+}
+
+@media only screen and (max-width: 580px) {
+  .amount__span {
+    right: 20px;
+    padding-left: 15px;
+  }
+}

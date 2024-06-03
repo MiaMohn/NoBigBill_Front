@@ -57,6 +57,14 @@ body {
   cursor: url("assets/media/images/mouse.svg"), auto !important;
 }
 
+input,
+select {
+  background-color: var(--off-white);
+  border: var(--border-black);
+  border-radius: 8px;
+  padding: 10px;
+}
+
 button:hover,
 input:hover,
 select:hover,

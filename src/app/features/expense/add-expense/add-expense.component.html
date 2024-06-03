@@ -1,5 +1,6 @@
 <div class="add-expense-form">
   <input
+    class="form__description"
     type="text"
     [(ngModel)]="description"
     placeholder="Description"
@@ -8,12 +9,13 @@
   <div class="amount-user">
     <div class="amount">
       <input
+        class="amount__input"
         type="number"
         [(ngModel)]="amount"
         placeholder="Amount"
         name="amount"
       />
-      <span>€</span>
+      <span class="amount__span">€</span>
     </div>
 
     <select [(ngModel)]="userId" name="userId">
@@ -24,6 +26,8 @@
     </select>
   </div>
   <div class="main-container__button">
-    <button class="button--medium button--dark-purple" (click)="addExpense()">Add</button>
+    <button class="button--medium button--dark-purple" (click)="addExpense()">
+      Add
+    </button>
   </div>
 </div>

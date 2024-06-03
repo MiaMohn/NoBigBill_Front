@@ -1,22 +1,12 @@
 .add-expense-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
+  margin: 0 25% 5% 25%;
+  gap: 20px;
 }
 
-.add-expense-form input,
-.add-expense-form select {
-  background-color: var(--off-white);
-  margin: 10px 0;
-  padding: 10px;
-  font-size: var(--medium);
-  border: var(--border-black);
-  border-radius: 8px;
-}
-
-.add-expense-form input:focus,
-.add-expense-form select:focus {
-  outline: none;
+.form__description {
+  width: 100%;
 }
 
 .amount-user {
@@ -29,12 +19,17 @@
   width: 50%;
 }
 
-.amount span {
+.amount__input {
+  padding: 11px 10px;
+  width: 100%;
+}
+
+.amount__span {
   position: absolute;
   right: 50px;
-  top: 13px;
+  top: 3px;
   border-left: var(--border-black);
-  padding: 10px 0 10px 40px;
+  padding: 11px 0 11px 40px;
   font-weight: bold;
 }
 
@@ -46,4 +41,28 @@
   width: 100%;
   height: auto;
   text-align: center;
+}
+
+@media only screen and (max-width: 1060px) {
+  .add-expense-form {
+    margin: 0 20% 5% 20%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .add-expense-form {
+    margin: 0 10% 5% 10%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .add-expense-form {
+    margin: 0 0 10% 0;
+  }
+
+  .amount__span {
+    right: 20px;
+    top: 3px;
+    padding: 11px 0 11px 15px;
+  }
 }

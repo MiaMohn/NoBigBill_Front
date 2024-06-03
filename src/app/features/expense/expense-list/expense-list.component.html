@@ -1,7 +1,7 @@
 <div class="expense-list">
   <app-add-expense (expenseAdded)="onExpenseAdded()"></app-add-expense>
 
-  <table>
+  <table class="expense-list__table">
     <tbody>
       <tr *ngFor="let expense of expenses">
         <div class="item">
