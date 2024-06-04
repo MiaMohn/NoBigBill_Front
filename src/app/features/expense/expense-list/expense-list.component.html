@@ -11,7 +11,7 @@
           </div>
           <div class="line">
             <td><span class="bold-text">By: </span> {{ expense.userName }}</td>
-            <td>{{ expense.expenseDate }}</td>
+            <td>{{ moment(expense.expenseDate).fromNow() }}</td>
           </div>
         </div>
 

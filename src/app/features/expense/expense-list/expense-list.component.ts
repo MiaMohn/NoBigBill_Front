@@ -9,6 +9,7 @@ import { AddExpenseComponent } from '../add-expense/add-expense.component';
 import { DeleteExpenseComponent } from '../delete-expense/delete-expense.component';
 import { UpdateExpenseComponent } from '../update-expense/update-expense.component';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import moment from 'moment';
 
 @Component({
   selector: 'app-expense-list',
@@ -20,6 +21,7 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 export class ExpenseListComponent implements OnInit {
   expenses: Expense[] = [];
   users: User[] = [];
+  moment = moment;
 
   constructor(
     private expenseService: ExpenseService,
@@ -28,17 +30,13 @@ export class ExpenseListComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.expenseService.getExpenses().subscribe((data: Expense[]) => {
-      this.expenses = data;
-    });
-    this.userService.getUsers().subscribe((data: User[]) => {
-      this.users = data;
-    });
+    this.loadExpenses();
+    this.loadUsers();
   }
 
   loadExpenses(): void {
     this.expenseService.getExpenses().subscribe((data: Expense[]) => {
-      this.expenses = data;
+      this.expenses = data.sort((a, b) => new Date(b.expenseDate).getTime() - new Date(a.expenseDate).getTime());
     });
   }
 
