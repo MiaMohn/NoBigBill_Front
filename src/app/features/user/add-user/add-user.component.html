@@ -1,5 +1,5 @@
 
 <form class="button-actions add-user-form " (ngSubmit)="addUser()">
-  <input class="add-user-form__input" type="text" [(ngModel)]="newUser" placeholder="Add new user" id="userName" name="userName">
+  <input class="add-user-form__input" type="text" [(ngModel)]="newUser" placeholder="Add new user" id="userName" name="userName" required>
   <button class="button--medium button--dark-purple" type="submit">Add</button>
 </form>

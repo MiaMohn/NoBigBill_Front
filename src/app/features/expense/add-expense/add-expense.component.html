@@ -5,6 +5,7 @@
     [(ngModel)]="description"
     placeholder="Description"
     name="description"
+    required
   />
   <div class="amount-user">
     <div class="amount">
@@ -14,11 +15,12 @@
         [(ngModel)]="amount"
         placeholder="Amount"
         name="amount"
+        required
       />
       <span class="amount__span">€</span>
     </div>
 
-    <select [(ngModel)]="userId" name="userId">
+    <select [(ngModel)]="userId" name="userId" required>
       <option [ngValue]="null" disabled selected>User</option>
       <option *ngFor="let user of users" [ngValue]="user.id">
         {{ user.name }}

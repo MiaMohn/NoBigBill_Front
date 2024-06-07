@@ -7,6 +7,7 @@
         type="text"
         placeholder="Description"
         name="description"
+        required
       />
       <div class="amount-user">
         <div class="amount">
@@ -16,11 +17,12 @@
             formControlName="amount"
             placeholder="Amount"
             type="number"
+            required
           />
           <span class="amount__span">€</span>
         </div>
 
-        <select id="user_id" class="dialog__form__input" formControlName="user_id">
+        <select id="user_id" class="dialog__form__input" formControlName="user_id" required>
           <option [value]="null" disabled selected>User</option>
           <option *ngFor="let user of users" [value]="user.id">
             {{ user.name }}
