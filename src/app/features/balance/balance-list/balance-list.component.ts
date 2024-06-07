@@ -3,6 +3,7 @@ import { BalanceService } from '../../../services/balance/balance.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { BalanceChartComponent } from '../../../core/components/balance-chart/balance-chart.component';
+import { TransactionsListComponent } from '../transactions-list/transactions-list.component';
 
 @Component({
   selector: 'app-balance-list',
@@ -10,7 +11,8 @@ import { BalanceChartComponent } from '../../../core/components/balance-chart/ba
   imports: [
     CommonModule,
     RouterModule,
-    BalanceChartComponent
+    BalanceChartComponent,
+    TransactionsListComponent
   ],
   templateUrl: './balance-list.component.html',
   styleUrl: './balance-list.component.css'

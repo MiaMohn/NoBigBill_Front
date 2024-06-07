@@ -14,4 +14,8 @@ export class BalanceService {
   getBalances(): Observable<{ [key: string]: number }> {
     return this.http.get<{ [key: string]: number }>(this.balanceApiUrl);
   }
+
+  getTransactions(): Observable<string[]> {
+    return this.http.get<string[]>(`${this.balanceApiUrl}/transactions`);
+  }
 }
