@@ -17,7 +17,7 @@ export class AddExpenseComponent implements OnInit {
   @Output() expenseAdded = new EventEmitter<void>();
   users: User[] = [];
   description: string = '';
-  amount: number = 0;
+  amount: number | null = null;
   userId: number | null = null;
 
   constructor(
@@ -32,19 +32,32 @@ export class AddExpenseComponent implements OnInit {
   }
 
   addExpense(): void {
-    if (this.description.trim() && this.amount > 0 && this.userId !== null) {
-      const newExpense = {
-        description: this.description,
-        amount: this.amount,
-        user_id: this.userId,
-      };
-
-      this.expenseService.createExpense(newExpense).subscribe(() => {
-        this.expenseAdded.emit();
-        this.description = '';
-        this.amount = 0;
-        this.userId = null;
-      });
+    if (!this.description.trim()) {
+      alert('Description cannot be empty');
+      return;
     }
+
+    if (this.amount === null || this.amount <= 0) {
+      alert('Amount must be greater than 0');
+      return;
+    }
+
+    if (this.userId === null) {
+      alert('You must select an user');
+      return;
+    }
+
+    const newExpense = {
+      description: this.description,
+      amount: this.amount,
+      user_id: this.userId,
+    };
+
+    this.expenseService.createExpense(newExpense).subscribe(() => {
+      this.expenseAdded.emit();
+      this.description = '';
+      this.amount = null;
+      this.userId = null;
+    });
   }
 }

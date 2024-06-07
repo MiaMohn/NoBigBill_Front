@@ -20,11 +20,14 @@ export class AddUserComponent {
   constructor(private userService: UserService) {}
 
   addUser(): void {
-    if (this.newUser.trim()) {
-      this.userService.createUser(this.newUser).subscribe((user: User) => {
-        this.newUser = '';
-        this.userAdded.emit();
-      });
+    if (this.newUser.trim() === '') {
+      alert('User name cannot be empty.');
+      return;
     }
+
+    this.userService.createUser(this.newUser).subscribe((user: User) => {
+      this.newUser = '';
+      this.userAdded.emit();
+    });
   }
 }
