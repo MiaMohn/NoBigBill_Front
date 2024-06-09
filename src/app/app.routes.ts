@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { UserComponent } from './features/user/user.component';
-import { ExpenseComponent } from './features/expense/expense.component';
-import { BalanceListComponent } from './features/balance/balance-list/balance-list.component';
+import { UserComponent } from './users/components/user/user.component';
+import { ExpenseComponent } from './expenses/components/expense/expense.component';
+import { BalanceListComponent } from './balance/components/balance-list/balance-list.component';
 
 export const routes: Routes = [
   { path: 'user', component: UserComponent },

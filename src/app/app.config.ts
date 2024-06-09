@@ -3,7 +3,7 @@ import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideHttpClient, withFetch, withInterceptors } from '@angular/common/http';
-import { ErrorResponseInterceptor } from './shared/error-response.interceptor';
+import { ErrorResponseInterceptor } from './core/interceptors/error-response.interceptor';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 export const appConfig: ApplicationConfig = {
