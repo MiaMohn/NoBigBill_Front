@@ -18,29 +18,32 @@ export class ExpenseService {
   createExpense(expense: {
     description: string;
     amount: number;
-    user_id: number;
+    user_id: UserId;
   }): Observable<Expense> {
     return this.http.post<Expense>(this.expenseApiUrl, expense);
   }
 
-  getExpenseById(id: number): Observable<any> {
+  getExpenseById(id: ExpenseId): Observable<any> {
     const url = `${this.expenseApiUrl}/${id}`;
     return this.http.get(url);
   }
 
-  getExpenseByUserId(user_id: number): Observable<any> {
+  getExpenseByUserId(user_id: UserId): Observable<any> {
     const url = `${this.expenseApiUrl}/user/${user_id}`;
     return this.http.get(url);
   }
 
-  updateExpense(expense: any, id: number): Observable<any> {
+  updateExpense(expense: any, id: ExpenseId): Observable<any> {
     const url = `${this.expenseApiUrl}/${id}`;
     return this.http.put(url, expense);
   }
 
-  deleteExpense(id: number): Observable<void> {
+  deleteExpense(id: ExpenseId): Observable<void> {
     return this.http.delete<void>(`${this.expenseApiUrl}/${id}`, {
       responseType: 'text' as 'json',
     });
   }
 }
+
+export type ExpenseId = number;
+export type UserId = number;

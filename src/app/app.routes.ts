@@ -5,7 +5,7 @@ import { BalanceListComponent } from './balance/components/balance-list/balance-
 
 export const routes: Routes = [
   { path: 'user', component: UserComponent },
-  { path: 'expense', component: ExpenseComponent },
-  { path: 'balance', component: BalanceListComponent },
+  { path: 'expense', loadComponent: () => import('./expenses/components/expense/expense.component').then(c => c.ExpenseComponent)},
+  { path: 'balance', loadComponent: () => import('./balance/components/balance-list/balance-list.component').then(c => c.BalanceListComponent)},
   { path: '', redirectTo: '/user', pathMatch: 'full' },
 ];

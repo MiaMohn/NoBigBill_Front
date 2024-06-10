@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { UserListComponent } from '../user-list/user-list.component';
 import { User } from '../../models/user.model';
 import { UserService } from '../../services/user.service';
@@ -16,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     AddUserComponent
   ],
   templateUrl: './user.component.html',
-  styleUrl: './user.component.css'
+  styleUrl: './user.component.css',
+  changeDetection: ChangeDetectionStrategy.Default
 })
 export class UserComponent implements OnInit {
 

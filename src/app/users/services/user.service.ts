@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, Type } from '@angular/core';
 import { Observable } from 'rxjs';
 import { User } from '../models/user.model';
+import { ExpressionType } from '@angular/compiler';
 
 @Injectable({
   providedIn: 'root',
@@ -15,24 +16,27 @@ export class UserService {
     return this.http.get(this.userApiUrl);
   }
 
-  createUser(name: string): Observable<User> {
+  createUser(name: UserName): Observable<User> {
     const newUser = { name };
     return this.http.post<User>(this.userApiUrl, newUser);
   }
 
-  getUserById(id: number): Observable<any> {
+  getUserById(id: UserId): Observable<any> {
     const url = `${this.userApiUrl}/${id}`;
     return this.http.get(url);
   }
 
-  updateUser(user: User, id: number): Observable<User> {
+  updateUser(user: User, id: UserId): Observable<User> {
     const url = `${this.userApiUrl}/${id}`;
     return this.http.put<User>(url, user);
   }
 
-  deleteUser(id: number): Observable<void> {
+  deleteUser(id: UserId): Observable<void> {
     return this.http.delete<void>(`${this.userApiUrl}/${id}`, {
       responseType: 'text' as 'json',
     });
   }
 }
+
+export type UserId = number;
+export type UserName = String;

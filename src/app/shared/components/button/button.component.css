@@ -1,0 +1,7 @@
+:host {
+  display: block;
+}
+
+button:hover {
+  cursor: url("../../../../assets/media/images/mouse-pointer.svg"), auto !important;
+}
