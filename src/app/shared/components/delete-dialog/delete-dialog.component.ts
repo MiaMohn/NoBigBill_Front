@@ -1,10 +1,11 @@
 import { Component, Inject, ViewEncapsulation } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-delete-dialog',
   standalone: true,
-  imports: [],
+  imports: [ButtonComponent],
   templateUrl: './delete-dialog.component.html',
   styleUrl: './delete-dialog.component.css',
   encapsulation: ViewEncapsulation.None

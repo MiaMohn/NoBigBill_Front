@@ -5,11 +5,12 @@ import { User } from '../../../users/models/user.model';
 import { ExpenseService } from '../../services/expense.service';
 import { UserService } from '../../../users/services/user.service';
 import { Expense } from '../../models/expense.model';
+import { ButtonComponent } from '../../../shared/components/button/button.component';
 
 @Component({
   selector: 'app-add-expense',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, ButtonComponent],
   templateUrl: './add-expense.component.html',
   styleUrl: './add-expense.component.css',
 })

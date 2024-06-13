@@ -65,7 +65,6 @@ select {
   padding: 10px;
 }
 
-button:hover,
 input:hover,
 select:hover,
 a:hover {
@@ -81,76 +80,9 @@ select:focus {
   font-weight: bold;
 }
 
-/* || Buttons */
-
-.button--long {
-  font-weight: bold;
-  padding: 0.5rem;
-  width: 9.375rem;
-  border: var(--border-black);
-  border-radius: 0.5rem;
-  background-color: var(--off-white);
-
-  transition-property: color, background-color;
-  transition-duration: 0.2s;
-}
-
-.button--medium {
-  font-weight: bold;
-  padding: 0.5rem;
-  width: 6.25rem;
-  border: var(--border-black);
-  border-radius: 0.5rem;
-  background-color: var(--off-white);
-  transition-property: color, background-color;
-  transition-duration: 0.2s;
-}
-
 .button-actions {
   display: flex;
   gap: 1.25rem;
-}
-
-/* Hover */
-.button--orange:hover {
-  background-color: var(--orange);
-  color: var(--off-white);
-}
-
-.button--light-purple:hover {
-  background-color: var(--light-purple);
-  color: var(--off-white);
-}
-
-.button--yellow:hover {
-  background-color: var(--yellow);
-  color: var(--off-white);
-}
-
-.button--dark-purple:hover {
-  background-color: var(--dark-purple);
-  color: var(--off-white);
-}
-
-.button--red:hover {
-  background-color: var(--red);
-  color: var(--off-white);
-}
-
-/* Focus */
-.button--focus--orange:focus {
-  background-color: var(--orange);
-  color: var(--off-white);
-}
-
-.button--focus--light-purple:focus {
-  background-color: var(--light-purple);
-  color: var(--off-white);
-}
-
-.button--focus--yellow:focus {
-  background-color: var(--yellow);
-  color: var(--off-white);
 }
 
 /* || Dialog */
@@ -181,7 +113,7 @@ select:focus {
 
 
 /* Responsive adjustments */
-@media (max-width: 900px) {
+/*@media (max-width: 900px) {
   .button--long,
   .button--medium {
     padding: 0.65rem;
@@ -190,4 +122,4 @@ select:focus {
   .button-actions {
     gap: 0.65rem;
   }
-}
+}*/

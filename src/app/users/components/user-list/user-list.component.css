@@ -1,7 +1,6 @@
 .user-list,
 .user-list__table {
   width: 100%;
-  border-spacing: 0;
 }
 
 .item {

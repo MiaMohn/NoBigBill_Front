@@ -3,11 +3,12 @@ import { UpdateExpenseDialogComponent } from '../update-expense-dialog/update-ex
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { CommonModule } from '@angular/common';
 import { ExpenseService } from '../../services/expense.service';
+import { ButtonComponent } from '../../../shared/components/button/button.component';
 
 @Component({
   selector: 'app-update-expense',
   standalone: true,
-  imports: [CommonModule, MatDialogModule, UpdateExpenseDialogComponent],
+  imports: [CommonModule, MatDialogModule, UpdateExpenseDialogComponent, ButtonComponent],
   templateUrl: './update-expense.component.html',
   styleUrl: './update-expense.component.css',
 })

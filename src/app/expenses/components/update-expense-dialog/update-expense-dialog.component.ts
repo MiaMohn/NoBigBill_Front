@@ -5,11 +5,12 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { UserService } from '../../../users/services/user.service';
 import { User } from '../../../users/models/user.model';
 import { ExpenseService } from '../../services/expense.service';
+import { ButtonComponent } from '../../../shared/components/button/button.component';
 
 @Component({
   selector: 'app-update-expense-dialog',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, ButtonComponent],
   templateUrl: './update-expense-dialog.component.html',
   styleUrl: './update-expense-dialog.component.css',
   encapsulation: ViewEncapsulation.None

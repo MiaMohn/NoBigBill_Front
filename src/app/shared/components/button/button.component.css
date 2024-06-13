@@ -5,3 +5,71 @@
 button:hover {
   cursor: url("../../../../assets/media/images/mouse-pointer.svg"), auto !important;
 }
+
+.button {
+  font-weight: bold;
+  padding: 10px;
+  border: var(--border-black);
+  border-radius: 0.5rem;
+  background-color: var(--off-white);
+
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+}
+
+.button--long {
+  width: 9.375rem; 
+}
+
+.button--medium {
+  width: 6.25rem;
+}
+
+/* Hover & Focus */
+.button:hover,
+.button--focus:focus {
+  color: var(--off-white);
+}
+
+.button--orange:hover,
+.button--orange--focus:focus {
+  background-color: var(--orange);
+}
+
+.button--light-purple:hover,
+.button--light-purple--focus:focus {
+  background-color: var(--light-purple);
+}
+
+.button--yellow:hover,
+.button--yellow--focus:focus {
+  background-color: var(--yellow);
+}
+
+.button--dark-purple:hover {
+  background-color: var(--dark-purple);
+}
+
+.button--red:hover {
+  background-color: var(--red);
+}
+
+/* Responsive adjustments */
+
+@media only screen and (max-width: 900px) {
+  .button-actions {
+    gap: 0.65rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu__button {
+    width: 8rem;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .menu__button {
+    width: 6rem;
+  }
+}

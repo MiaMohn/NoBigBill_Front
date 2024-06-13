@@ -62,10 +62,6 @@
     margin: 15vh 0 0 0;
   }
 
-  .button {
-    width: 8rem;
-  }
-
   .data-container {
     padding: 5% 5% 8% 5%;
   }
@@ -74,11 +70,5 @@
     width: 20px;
     height: 20px;
     margin: 12px 20px;
-  }
-}
-
-@media only screen and (max-width: 460px) {
-  .button {
-    width: 6rem;
   }
 }

@@ -4,11 +4,12 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { CommonModule } from '@angular/common';
 import { UserService } from '../../services/user.service';
 import { User } from '../../models/user.model';
+import { ButtonComponent } from '../../../shared/components/button/button.component';
 
 @Component({
   selector: 'app-update-user',
   standalone: true,
-  imports: [CommonModule, MatDialogModule, UpdateUserDialogComponent],
+  imports: [CommonModule, MatDialogModule, UpdateUserDialogComponent, ButtonComponent],
   templateUrl: './update-user.component.html',
   styleUrl: './update-user.component.css'
 })

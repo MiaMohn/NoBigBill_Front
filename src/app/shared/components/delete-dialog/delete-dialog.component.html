@@ -3,7 +3,7 @@
     <p class="bold-text">Are you really sure you want to delete it?</p>
   </div>
   <div class="button-actions" mat-dialog-actions>
-    <button class="button--medium button--yellow" mat-button (click)="onNoClick()">Cancel</button>
-    <button class="button--medium button--red" mat-button (click)="onConfirmClick()">Delete</button>
+    <app-button [class]="'button--medium button--yellow'" mat-button (click)="onNoClick()">Cancel</app-button>
+    <app-button [class]="'button--medium button--red'" mat-button (click)="onConfirmClick()">Delete</app-button>
   </div>
 </div>

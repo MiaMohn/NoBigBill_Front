@@ -4,12 +4,14 @@ import { BalanceListComponent } from '../balance-list/balance-list.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { BalanceService } from '../../services/balance.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-balance',
   standalone: true,
   imports: [
     CommonModule,
+    HttpClientModule,
     RouterModule,
     BalanceListComponent,
     TransactionsListComponent,

@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { DeleteDialogComponent } from '../../../shared/components/delete-dialog/delete-dialog.component';
+import { ButtonComponent } from '../../../shared/components/button/button.component';
 
 @Component({
   selector: 'app-delete-expense',
@@ -15,6 +16,7 @@ import { DeleteDialogComponent } from '../../../shared/components/delete-dialog/
     HttpClientModule,
     MatDialogModule,
     DeleteDialogComponent,
+    ButtonComponent
   ],
   templateUrl: './delete-expense.component.html',
   styleUrl: './delete-expense.component.css',

@@ -14,9 +14,9 @@
 
     <div class="content">
       <div class="menu">
-        <button class="button button--long button--orange button--focus--orange" routerLink="/user">User</button>
-        <button class="button button--long button--light-purple button--focus--light-purple" routerLink="/expense">Expense</button>
-        <button class="button button--long button--yellow button--focus--yellow" routerLink="/balance">Balance</button>
+        <app-button [class]="'menu__button button--long button--orange button--orange--focus'" [routerLink]="'/user'">User</app-button>
+        <app-button [class]="'menu__button button--long button--light-purple button--light-purple--focus'" [routerLink]="'/expense'">Expense</app-button>
+        <app-button [class]="'menu__button button--long button--yellow button--yellow--focus'" [routerLink]="'/balance'">Balance</app-button>
       </div>
 
       <div class="data-container">
