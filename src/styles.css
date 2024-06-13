@@ -110,16 +110,3 @@ select:focus {
   border-radius: 0.5rem;
   padding: 0.5rem;
 }
-
-
-/* Responsive adjustments */
-/*@media (max-width: 900px) {
-  .button--long,
-  .button--medium {
-    padding: 0.65rem;
-  }
-
-  .button-actions {
-    gap: 0.65rem;
-  }
-}*/
