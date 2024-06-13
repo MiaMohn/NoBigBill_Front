@@ -2,8 +2,11 @@
   background-color: var(--dark-orange);
   margin-top: 150px;
   padding: 40px 50px 40px 50px;
-  display: flex;
   border-top: var(--border-black);
+}
+
+.footer__content {
+  display: flex;
 }
 
 .side_column {
@@ -66,8 +69,12 @@ hr {
   justify-items: right;
 }
 
+.license {
+  text-align: center;
+}
+
 @media only screen and (max-width: 780px) {
-  .footer {
+  .footer__content {
     flex-direction: column;
     align-items: center;
     gap: 60px;
