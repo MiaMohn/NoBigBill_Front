@@ -1,4 +1,5 @@
-This project is under license cc
+- This project is under license cc
+- This project is still in progress
 
 # NoBigBill
 
